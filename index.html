@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="container-fluid p-2 bg-warnig text-center">
-        <nav class="navbar navbar-expand-lg bg-warnig">
+    <header class="container-fluid p-2 bg-warning text-center">
+        <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Viagem dos sonhos!</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse justify-content-end bg-warnig" id="navbarNav">
+              <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Pacotes</a>
@@ -31,41 +31,103 @@
               </div>
             </div>
           </nav>
-        <h1>Venha realizar a viagem dos sonhos!</h1>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carousel/rio_de_janeiro.jpg" class="d-block w-100" alt="Rio,BR">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>RIO DE JANEIRO, A CIDADE MARAVILHOSA</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/hawaii.jpg" class="d-block w-100" alt="Havaí,USA">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>HAVAÍ, O PARAÍSO DO PACÍFICO</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/Tokyo.jpg" class="d-block w-100" alt="Tokyo,JP">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TOKYO, A CAPITAL DO FUTURO</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
-    <section class="container-fluid bg-light text-center">
+    <section class="container-fluid bg-light text-center p-2">
         <h2>Conheça nossos pacotes de viagens</h2>
-        <p>paragrafo</p>
         <br><br>
-    <div class="row">
-        <figure class="col text-center">
-            <img src="img/Jerusalem.jpg" alt="Jerusalem-Israel" width="380">
-            <figcaption>Jerusálem, Israel - A cidade Santa</figcaption>
-        </figure>
-        <figure class="col text-center">
-            <img src="img/Kyoto.jpg" alt="Kyoto-Japão" width="380">
-            <figcaption>Kyoto, Japão - A cidade dos samurais</figcaption>
-        </figure>
-        <figure class="col text-center">
-            <img src="img/Berlim.jpg" alt="Berlim-Alemanha" width="380">
-            <figcaption>Berlim, Alemanha - A capital da europa</figcaption>
-        </figure>
-    </div>
-    
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Jerusalem.jpg" widht="200" class="card-img-top" alt="Jerusalem">
+                <div class="card-body">
+                  <h5 class="card-title">JERUSÁLEM, ISRAEL</h5>
+                  <h1 class="card-subtitle text-muted">R$ 16.050,00</h1>
+                  <p class="card-text">Venha conhecer uma das cidades mais antigas e repletas de beleza e história. Caminhe sobre as páginas da Bíblia e viva momentos incríveis de conexão com a Terra Santa.</p>
+                </div>
+                <a href="#" class="btn btn-primary bg-warning p-2"><strong>RESERVAR</strong></a><br>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em até 24x SEM JUROS!</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Berlim.jpg" class="card-img-top" alt="Berlim">
+                <div class="card-body">
+                  <h5 class="card-title">BERLIM, ALEMANHA</h5>
+                  <h1 class="card-subtitle text-muted">R$ 14.120,00</h1>
+                  <p class="card-text">A capital germânica, rica em momentos marcantes da história mundial. Venha conhecer o maior festival de cerveja do mundo, a Oktoberfest</p>
+                </div>
+                <a href="#" class="btn btn-primary bg-warning p-2"><strong>RESERVAR</strong></a><br>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em até 24x SEM JUROS!</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/Kyoto.jpg" class="card-img-top" alt="Kyoto">
+                <div class="card-body">
+                  <h5 class="card-title">KYOTO, JAPÃO</h5>
+                  <h1 class="card-subtitle text-muted">R$ 18.350,00</h1>
+                  <p class="card-text">A tradição japonesa não morreu, ela está viva e passeia pelas ruas de Kyoto. Entre na Capital dos Samurais e viva a história do Japão</p>
+                </div>
+                <a href="#" class="btn btn-primary bg-warning p-2"><strong>RESERVAR</strong></a><br>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Em até 24x SEM JUROS!</small>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
-    <section class="container-fluid bg-warnig">
+    <section class="container-fluid bg-warning text-xl-center p-2">
         <h2>Taxas e serviços</h2>
         <p>Veja nossas cotações e taxas para serviços</p>
-        <table>
+        <table class="table table-warning table-striped table-hover table-bordered border-warning" >
             <caption>Descrição dos serviços e respectivos valores</caption>
-            <thead>
+            <thead class="table-secondary">
                 <tr>
                     <th>Serviços</th>
                     <th>Valores</th>
                     <th>Observações</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
                 <tr>
                     <td>Reserva de hotel</td>
                     <td>R$ 890,00 </td>
@@ -84,62 +146,64 @@
             </tbody>
         </table>
     </section><br>
-    <section class="container-fluid bg-light"></section>>
-        <fieldset>
-            <legend>Contato e orçamento</legend>
+    <section class="container-fluid bg-light p-2"></section>>
+            <h2 class="text-center">Faça já seu orçamento</h2>
                 <form method="get" action="">
                     <div class="mb-3">
-                        <label class="form-label" for="nome">Nome completo</label><br>
-                        <input type="text" class="form-control" required name="nome" id="nome"><br><br>
+                        <label class="form-label" for="nome">
+                            Nome completo<br>
+                        </label>
+                        <input type="text" class="form-control" required name="nome" id="nome">
                     </div>
 
-                    <div>
-                    <label class="form-label" for="email">Email</label><br>
-                    <input type="email" class="form-control" required name="email"><br><br>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">
+                            Email<br>
+                        </label>
+                        <input type="email" class="form-control" required name="email" id="email" placeholder="email@xyz.com">
                     </div>
 
-                    <label>Data de ida</label><br>
-                    <input type="date" required name="dataIda"><br><br>
+                    <div class="mb-3">
+                        <label class="form-label" for="dataIda">
+                            Data de ida<br>
+                        </label>
+                        <input type="date" required class="form-control" id="dataIda" name="dataIda">
+                    </div>
 
-                    <label>Data de volta</label><br>
-                    <input type="date" required name="dataVolta"><br><br>
-
-                    <labe>Quantidade de pessoas</labe><br>
-                    <input type="number" required name="qtdPessoas"><br><br>
+                    <div class="mb-3">
+                        <label class="form-label" for="dataVolta">
+                            Data de volta<br>
+                        </label>
+                        <input type="date" required class="form-control" id="dataVolta" name="dataVolta">
+                    </div>
 
                      <fieldset>
                         <legend>Quais serviços deseja contratar?</legend>
-                            <label><br><input type="checkbox" name="Passagens" value="Passagens">Compra de passagens</label>
-                            <label><br><input type="checkbox" name="Hospedagem" value="Hospedagem">Reserva de hotél</label>
-                            <label><br><input type="checkbox" name="Veiculos" value="Veiculos">Aluguel de veículos</label>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="Passagens" value="Passagens" id="compraPassagem">
+                            <label class="form-check-label" for="compraPassagem">
+                                Compra de passagens
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="Hospedagem" value="Hospedagem" id="hospedagem">
+                            <label class="form-check-label" for="hospedagem">
+                                Reserva de hotél
+                            </label>
+                        </div>
+                            
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="veiculos" value="veiculos" id="veiculos">
+                            <label class="form-check-label" for="veiculos">
+                                Aluguel de veículosl
+                            </label>
+                        </div>
                     </fieldset><br>
-
-                    <fieldset>
-                        <legend>Escolha a forma de pagamento</legend>
-                            <label><br><input type="radio" name="formaPagamento" value="Cartão de crédito">Cartão de crédito</label>
-                            <label><br><input type="radio" name="formaPagamento" value="A vista">À vista (no boleto)</label>
-                            <label><br><input type="radio" name="formaPagamento" value="PIX">PIX</label>
-                    </fieldset><br>
-
-                    <fieldset>
-                        <legend>Escolha o prazo do pagamento</legend>
-                            <select name="prazoPagamento">
-                                <option value=""></option>
-                                <option value="À vista">À vista</option>
-                                <option value="6x">6x sem juros</option>
-                                <option value="12x">12x sem juros</option>
-                                <option value="18x">18x sem juros</option>
-                            </select>
-                    </fieldset><br>
-
-                    <label>Comentário</label><br>
-                    <textarea rows="5" name="comentario"></textarea><br><br>
-
-                    <button type="submit">Enviar</button>
+                    <button class="btn btn-secondary">Enviar</button>
                 </form>
-        </fieldset>
-    </section>
-    <footer class="container-fluid bg-warnig"></footer>
+        <br>
+    </section><br>
+    <footer>
         <p>Theo da Mata <img src="https://serebii.net/pokedex-bw/icon/025.png" alt="pikachuzinho"> &copy; 2023 </p>    
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
